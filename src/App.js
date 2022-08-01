@@ -22,7 +22,7 @@ function App() {
          rating={rating} 
          setRating={setRating} 
          handleSubmit={handleSubmit}
-         starRating={starRating}/>} />
+         starRating={starRating.reverse()}/>} />
          <Route path='/complete' element={<Complete rating={rating}/>}/>
       </Routes>
      

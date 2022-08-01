@@ -16,8 +16,9 @@ function Rating({setRating,rating,handleSubmit,starRating}) {
           </p>
        </section>
        <ul className='star-rating'>
-          {starRating.map( star => (
-              <li className='circle-effect dark-blue_bg' key={star}
+          {starRating.map( (star,id) => (
+              <li className='circle-effect dark-blue_bg' 
+                  key={star}
                   onClick={()=>setRating(star)}>{star}</li>
             ))}
        </ul>  
